@@ -1,0 +1,74 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <title> Pagina HTML - TESTE CRAWLJAX </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jQuery UI Dialog - Animation</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+    });
+
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+  </script>
+
+</head>
+
+<body>
+  <div align="center">
+    <h1>Pagina Inicial</h1>
+    <h2>Teste Crawljax</h2>
+    <p>Esta pagina visa testar as funcionalidades do crawler Crawljax.</p>
+  </div>
+   <a href="http://www.crawljax.com"><img align="left" src="https://avatars0.githubusercontent.com/u/2947264?s=200&amp;v=4" /></a>
+   <a href="https://www.seleniumhq.org/"><img align="right" src="https://www.seleniumhq.org/images/big-logo.png" /></a>
+   <div align="center">
+     <p> <br /><br />Links para paginas:</p>
+       <a href="http://www.facebook.com">Link para a pagina do Facebook.  </a>.
+       <a href="http://www.twitter.com">Link para a pagina do Twitter.  </a>.
+       <a href="http://www.instagram.com">Link para a pagina do Intagram.  </a>.
+       <a href="http://cafe.intermidia.icmc.usp.br:22080/leonardo/site_teste.html">Link para esta pagina.  </a>.
+   </div>
+  <div align="center">
+    <br /><br /><br />
+    <h3>Teste Widgets</h3>
+    <p>Date: <input type="text" id="datepicker" class="hasDatepicker" /></p>
+  </div>
+
+  <div align="left">
+    <form method="get" action=" http://cafe.intermidia.icmc.usp.br:22080/leonardo/site_teste.html"><button type="submit">Botão para a mesma pagina</button></form>
+    <form method="get" action=" http://jqueryui.com/"><button type="submit">Botão para outra pagina</button></form>
+  </div>
+
+  
+  <button id="opener">Abrir Janela Modal</button>
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style=""></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable" aria-describedby="dialog" aria-labelledby="ui-id-1" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Basic dialog</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="dialog" class="ui-dialog-content ui-widget-content">
+    <p>Aperte "Close" para fechar a janela.</p>
+  </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div></body></html>
